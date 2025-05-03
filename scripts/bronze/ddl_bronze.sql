@@ -62,11 +62,11 @@ CREATE TABLE bronze.erp_loc_a101 (
 	cntry NVARCHAR(50)
 );
 GO
--- if "ronze.erp_cust_az12" table exit then drop
+-- if "bronze.erp_cust_az12" table exit then drop
 IF OBJECT_ID('bronze.erp_cust_az12', 'U') IS NOT NULL
 	DROP TABLE bronze.erp_cust_az12;
 GO
--- create "ronze.erp_cust_az12" table
+-- create "bronze.erp_cust_az12" table
 CREATE TABLE bronze.erp_cust_az12 (
 	cid   NVARCHAR(50),
 	bdate DATE,
